@@ -12,10 +12,10 @@ A structured, concept-driven deep learning project that classifies **176 leaf sp
 
 | Experiment | Approach | Best Val Accuracy |
 |-----------|----------|-------------------|
-| 1 | Custom CNN from scratch (30 epochs) | 61.21% |
-| 2 | Transfer Learning + Fine-tuning (ResNet-50) | 88.92% |
-| 2b | Enhanced head + AdamW scheduler | 80.04% |
-| 3 | Differential LR Fine-tuning | In progress |
+| 1 | Custom CNN from scratch (30 epochs) | 59.62% |
+| 2 | Transfer Learning + Fine-tuning (ResNet-50) | 88.75% |
+| 2b | Enhanced head + AdamW scheduler | 72.12% |
+| 3 | Differential LR Fine-tuning (best approach) | **89.75%** |
 
 ## Concepts Covered
 
@@ -30,7 +30,7 @@ A structured, concept-driven deep learning project that classifies **176 leaf sp
 
 ## Key Takeaways
 
-1. Transfer learning (88.92%) dramatically outperforms training from scratch (61.21%) — ResNet-50 already understands visual features from 1.2M ImageNet images
+1. Transfer learning (88.75%) dramatically outperforms training from scratch (59.62%) — ResNet-50 already understands visual features from 1.2M ImageNet images
 2. Fine-tuning requires careful learning rate selection — too high destroys pretrained features
 3. Differential learning rates (lower for early layers, higher for later layers) is the correct approach for fine-tuning pretrained models
 4. Data augmentation is essential for imbalanced datasets with rare classes
